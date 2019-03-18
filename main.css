@@ -1,0 +1,724 @@
+.transition {    
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+/* 
+red: #CB3735;
+blue: #269DB3;
+yellow: #EEAE4C; */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+h2{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+
+
+/* NAVIGATIONBAR */
+#navbar {
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2vw;
+    transition: top 0.5s;
+    padding-top: 15px;
+    top: -80px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: antiquewhite;
+    padding-right: 40px;
+}
+
+#rightNav {
+    float: right;
+}
+
+#navbar a:hover {
+    color: #ddd;
+}
+  
+
+#sudinlogoa {
+    padding: 0;
+    position: absolute;
+    left: 0;
+}
+
+#sudin_logo {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    position: absolute;
+    left: 5px;
+    top:0;
+    border-radius: 50%; 
+}
+/* FIRST DIV */
+
+#backdrop {
+    position: absolute;
+    right: 0;
+    background-image: url(./images/topback.svg);
+    opacity: 0.8;
+    width: 60%; 
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+#intro_div {
+    position: relative;
+    max-width: 100%;
+    background-image: url("./images/IntroSudin.PNG");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#intro_div h1 {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: #1d1d1d;
+}
+
+
+#sudin {
+    left: 55%;
+    top: 30%;
+    font-size: 4vw;
+}
+#bajracharya {
+    left: 68%;
+    top: 30%;
+    font-size: 4vw;
+}
+
+#intro_div h3 {
+    position: absolute;
+    text-transform: uppercase;
+    top: 42%;
+    left: 65%;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 1vw;
+}
+
+#scroll_div {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#intro_div a {
+    color: #fff;
+    letter-spacing: .1em;
+    text-decoration: none;
+}
+
+#intro_div a:hover {
+    opacity: .5;
+}
+
+#intro_div a span {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+
+/* SECOND DIV */
+
+
+#aboutContainer {
+    width: 100%;
+    height: 100%;
+}
+#aboutMe_div {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'who love help';
+    align-items: center;
+}
+
+#aboutMe_div div {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+#me1 {
+    grid-area: 'who';
+    background-color: #269DB3;
+}
+
+#me1:hover {
+    background-color: rgb(45, 179, 202);
+}
+
+/*
+red: #CB3735;
+blue: #269DB3;
+yellow: #EEAE4C; */
+
+#me2 {
+    grid-area: 'love';
+    background-color: #CB3735;
+}
+
+#me2:hover {
+    background-color: rgb(223, 54, 52);
+}
+
+#me3 {
+    grid-area: 'help';
+    background-color: rgb(218, 131, 0);
+}
+
+#me3:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+#aboutMe_div h2 {
+    position: absolute;
+    top: 5%;
+    color: #ffffff;
+    padding-top: 1%;
+    font-size: 2rem;
+}
+
+#aboutMe_div p {
+    font-family: 'Dosis', sans-serif;
+    color: #e6e6e6;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0 auto 0 auto ;
+    width: 90%;
+    height: auto;
+
+}
+
+/* Mywork */
+
+#work_div {
+    background-color: #269DB3;
+    width: 100%;
+    height: fit-content;
+}
+
+#work_div h2 {
+    font-size: 3rem;
+    color: antiquewhite;
+    padding: 4% 0 1.5% 0;
+
+}
+
+#videoDiv {
+    height: fit-content;
+}
+
+#text {
+    padding-bottom: 4%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#video {
+    width: 70%;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+#videoPlayer {
+    width: 100%;
+    height: 100%;
+}
+
+#playlist {
+    display: flex;
+    width: 70vw;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 4%;
+}
+
+
+.thumbnail {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.thumbnail img {
+    width: 100%;
+    cursor: pointer;
+    padding: 4%;
+    margin: 4%;
+}
+
+/* My Clients */
+#myClients_div{
+    height: auto;
+}
+
+#myClients_div h2 {
+    font-size: 3rem;
+    padding: 4% 0 2% 0;
+}
+#clients_div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 'client1 client2 client3 client4 client5';
+    padding-bottom: 4%;
+}
+
+#caritas{
+    grid-area: 'client3';
+}
+
+#fsbnepal{
+    grid-area: 'client2';
+}
+
+#rashmischool{
+    grid-area: 'client1';
+}
+
+#daayitwa{
+    grid-area: 'client4';
+}
+
+#nepalleadershipacademy{
+    grid-area: 'client5';
+}
+#clients_div a ,
+#clients_div img {
+    justify-self: center;
+    height: auto;
+    width: 70%;
+    border-radius: 50%;
+    position:center;
+}
+
+/* Parralax */
+#parllax2 {
+    background-image: url("./images/littlegirl.PNG");
+    min-height: 50%;
+}
+
+#paralax1 {
+    background-image: url("./images/mother&child.PNG");
+    min-height: 80%;
+}
+.parallax_div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 50%;
+
+}
+
+/* FOOTER */
+#footer {
+    background-color: #CB3735;
+    width: 100%;
+    height: 50%;
+    color: antiquewhite;
+    font-family: 'Dosis', sans-serif;
+    display: inline-block; 
+    position: relative;
+}
+#contactInfo_div h3{
+    font-size: 1.3rem;
+    padding-bottom: 3%;
+}
+
+#info_span p {
+    font-size: 1.1rem;
+}
+
+
+#socialMedia_span {
+    display: inline-block;
+    padding: 5%;
+}
+#socialMedia_span img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px;
+    filter: invert(100%);
+}
+
+#info_span {
+    display: inline-block;
+    padding: 5%;
+    padding-left: 50%;
+}
+
+
+
+
+#credit{
+    background-color: #1d1d1d;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    color: #313131;
+}
+
+#credit p {
+    padding: 1%;
+}
+#credit a {
+    text-decoration: none;
+    color: #474747;
+}
+
+
+/* Image Slider */
+
+.cont {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.slider {
+    position: relative;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    cursor: all-scroll;
+    user-select: none;
+}
+.slider.animation {
+    transition: transform 750ms ease-in-out;
+}
+.slider.animation .slide__darkbg {
+    transition: transform 750ms ease-in-out;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+.slide--1 {
+    left: 0%;
+}
+.slide--2 {
+    left: 100%;
+}
+.slide--3 {
+    left: 200%;
+}
+.slide--4 {
+    left: 300%;
+}
+.slide--5 {
+    left: 400%;
+}
+.slide__darkbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    z-index: 10;
+}
+.slide--1__darkbg {
+    left: 0%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--1-min-min.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: 0px center, 0px center;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+
+.slide--2__darkbg {
+    left: -50%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--2-min-min.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: 0px center, 0px center;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+.slide--3__darkbg {
+    left: -100%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--3-min-min.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: 0px center, 0px center;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+.slide--4__darkbg {
+    left: -150%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--4-min-min.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: 0px center, 0px center;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+.slide--4__letter {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--4-min-min.jpg') center center no-repeat;
+    background-position: 0px center, 0px center;
+    background-size: cover;
+}
+.slide--5__darkbg {
+    left: -200%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--5-min-min.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: 0px center, 0px center;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+.nav {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    z-index: 10;
+}
+.nav__slide {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.nav__slide:hover:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+    opacity: 1;
+}
+.nav__slide:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0, 0);
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+    transition: 300ms;
+}
+.nav__slide--1 {
+    margin-left: 0;
+}
+.nav-active:after {
+    transform: translate(-50%, -50%) scale(1, 1);
+    opacity: 1;
+}
+.side-nav {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: 300ms;
+}
+.side-nav:hover {
+    opacity: 0.1;
+}
+.side-nav--right {
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+}
+.side-nav--left {
+    left: 0;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 400px) {
+
+    #backdrop {
+        display: none;
+    }
+
+    #intro_div {
+        background-position-x: 34%;
+        vertical-align: middle;
+    }
+
+    #intro_div h1{
+        position: absolute;
+    }
+    #sudin {
+        top: 34%;
+        left: 23%;
+        font-size: 18vw;
+    }
+    
+    #bajracharya {
+        top: 45%;
+        left: 22%;
+        font-size: 8vw;
+    }
+
+    #intro_div h3 {
+        font-size: 3.8vw;
+        top: 54%;
+        left: 22%;
+    }
+
+    /* Second Div */
+    #aboutMe_div {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'who'
+        'love'
+        'help';
+
+    }
+
+    #aboutMe_div h2 {
+        font-size: 1.3rem;
+    }
+
+    #aboutMe_div p {
+        font-size: 0.8rem;
+    }
+
+    #work_div h2 {
+        font-size: 2rem;
+        padding: 8% 0 4% 0;
+    }
+
+    #text{
+        font-size: 0.8rem;
+    }
+
+    #video {
+        max-width: 80%;
+        height: auto;
+    }
+
+    #playlist {
+        padding-bottom:8%; 
+    }
+
+    #thumbnail {
+        width: 80vw;
+    }
+
+    /* My clients */
+   #myClients_div h2{
+        font-size: 2rem;
+        padding: 8% 0 4% 0;
+   } 
+   #myClients_div {
+       height: auto;
+       padding-bottom: 8%;
+   }
+   #clients_div a img {
+       display: block;
+        margin: 0 auto;
+        padding:3%;
+   }
+   #clients_div {
+       display: grid;
+       grid-template-columns: none;
+       grid-template-rows: repeat(5,1fr);
+       grid-template-areas: 
+       'client1'
+       'client2'
+       'client3'
+       'client4'
+       'client5';
+   }
+
+   #parllax2 {
+       min-height: 60%;
+   }
+   #footer {
+       height: 40%;
+   }
+
+   #footer h2 {
+       font-size: 1.3rem;
+   }
+
+   #info_span {
+       float: left;
+       padding: 5%;
+   }
+}
+
