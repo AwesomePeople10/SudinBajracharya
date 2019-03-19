@@ -93,7 +93,7 @@ h2{
 #intro_div {
     position: relative;
     max-width: 100%;
-    background-image: url("./images/IntroSudin.PNG");
+    background-image: url("./images/introsudin.PNG");
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -509,20 +509,20 @@ yellow: #EEAE4C; */
 }
 .slide--4__darkbg {
     left: -150%;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--4-min-min.jpg') center center no-repeat;
+    background: url('https://images.pexels.com/photos/2007192/pexels-photo-2007192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center center no-repeat;
     background-size: cover;
     background-position: 0px center, 0px center;
     transform: translate3d(0, 0, 0);
     will-change: transform;
 }
 .slide--4__letter {
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--4-min-min.jpg') center center no-repeat;
+    background: url('https://images.pexels.com/photos/1199967/pexels-photo-1199967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center center no-repeat;
     background-position: 0px center, 0px center;
     background-size: cover;
 }
 .slide--5__darkbg {
     left: -200%;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/city--5-min-min.jpg') center center no-repeat;
+    background: url('https://images.pexels.com/photos/1382393/pexels-photo-1382393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center center no-repeat;
     background-size: cover;
     background-position: 0px center, 0px center;
     transform: translate3d(0, 0, 0);
