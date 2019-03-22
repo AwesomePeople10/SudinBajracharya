@@ -382,6 +382,8 @@ yellow: #EEAE4C; */
 }
 
 #info_span {
+    background-color: #CB3735;
+
     height: fit-content;
 }
 
