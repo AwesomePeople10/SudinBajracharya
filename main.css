@@ -725,9 +725,6 @@ html {
        height: fit-content;
        padding: 5%;
    }
-   #credit {
-       position: absolute;
-       bottom: 0;
-   }
+
 }
 
