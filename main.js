@@ -31,23 +31,23 @@ $(document).ready(function () {
 	let diff = 0;
 
 	// Generating slides
-	let arrCities = ['Amsterdam', 'Rome', 'New—York', 'Singapore', 'Prague']; // Change number of slides in CSS also
-	let numOfCities = arrCities.length;
-	let arrCitiesDivided = [];
+	let photoArr = ['Amsterdam', 'Rome', 'New—York', 'Singapore']; // Change number of slides in CSS also
+	let photoNum = photoArr.length;
+	let photoArrDivided = [];
 
-	arrCities.map((city) => {
-		let length = city.length;
+	photoArr.map((photo) => {
+		let length = photo.length;
 		let letters = Math.floor(length / 4);
 		let exp = new RegExp(".{1," + letters + "}", "g");
 
-		arrCitiesDivided.push(city.match(exp));
+		photoArrDivided.push(photo.match(exp));
 	});
 
-	let generateSlide = function (city) {
+	let generateSlide = function (photo) {
 		let frag1 = $(document.createDocumentFragment());
 		let frag2 = $(document.createDocumentFragment());
-		const numSlide = arrCities.indexOf(arrCities[city]) + 1;
-		const firstLetter = arrCitiesDivided[city][0].charAt(0);
+		const numSlide = photoArr.indexOf(photoArr[photo]) + 1;
+		const firstLetter = photoArrDivided[photo][0].charAt(0);
 
 		const $slide =
 			$(`<div data-target="${numSlide}" class="slide slide--${numSlide}">
@@ -60,10 +60,10 @@ $(document).ready(function () {
 							${firstLetter}
 						</div>`);
 
-		for (let i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
+		for (let i = 0, length = photoArrDivided[photo].length; i < length; i++) {
 			const text =
 				$(`<div class="slide__text slide__text--${i + 1}">
-								${arrCitiesDivided[city][i]}
+								${photoArrDivided[photo][i]}
 							</div>`);
 			frag1.append(text);
 		}
@@ -75,12 +75,12 @@ $(document).ready(function () {
 		$slide.find(`.slide--${numSlide}__text-wrapper`).append(letter).append(frag1);
 		$slider.append($slide);
 
-		if (arrCities[city].length <= 4) {
+		if (photoArr[photo].length <= 4) {
 			$('.slide--' + numSlide).find('.slide__text').css("font-size", "12vw");
 		}
 	};
 
-	for (let i = 0, length = numOfCities; i < length; i++) {
+	for (let i = 0, length = photoNum; i < length; i++) {
 		generateSlide(i);
 	}
 
@@ -119,7 +119,7 @@ $(document).ready(function () {
 
 	function navigateRight() {
 		if (!autoScrollVar) return;
-		if (curSlide >= numOfCities) return;
+		if (curSlide >= photoNum) return;
 		pagination(0);
 		setTimeout(timeout, animSpd);
 		bullets(curSlide + 1);
@@ -149,7 +149,7 @@ $(document).ready(function () {
 		$(document).on('mousemove touchmove', function (e) {
 			let x = e.pageX || e.originalEvent.touches[0].pageX;
 			diff = startX - x;
-			if (target === 1 && diff < 0 || target === numOfCities && diff > 0) return;
+			if (target === 1 && diff < 0 || target === photoNum && diff > 0) return;
 
 			$slider.css({
 				'transform': 'translate3d(-' + ((curSlide - 1) * 100 + (diff / 30)) + '%, 0, 0)'
@@ -195,11 +195,6 @@ $(document).ready(function () {
 
 		if (target === 'right') navigateRight();
 		if (target === 'left') navigateLeft();
-	});
-
-	$(document).on('keydown', function (e) {
-		if (e.which === 39) navigateRight();
-		if (e.which === 37) navigateLeft();
 	});
 
 
