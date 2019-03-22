@@ -711,7 +711,7 @@ html {
        min-height: 60%;
    }
    #footer {
-       height: 50%;
+       height: auto;
    }
 
    #footer h2 {
