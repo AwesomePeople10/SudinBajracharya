@@ -729,5 +729,11 @@ html {
        padding: 5%;
    }
 
+   #info_span p {
+       font-size: 1em;
+   }
+   #credit {
+       font-size: 1em;
+   }
 }
 
