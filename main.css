@@ -225,11 +225,9 @@ yellow: #EEAE4C; */
 }
 
 #aboutMe_div h2 {
-    position: absolute;
-    top: 5%;
     color: #ffffff;
-    padding-top: 1%;
     font-size: 2em;
+    padding-bottom: 5%;
 }
 
 #aboutMe_div p {
@@ -655,9 +653,9 @@ html {
     }
 
     #aboutMe_div div {
-        width: 80%;
-        height: auto;
-        padding: 4%
+        padding: 4%;
+        min-height: 80%; 
+        text-align: center;
     }
     
 
