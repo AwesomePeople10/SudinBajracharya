@@ -713,7 +713,7 @@ html {
        min-height: 60%;
    }
    #footer {
-       height: fit-content;
+       height: 45%;
    }
 
    #footer h2 {
@@ -722,7 +722,6 @@ html {
 
    #info_span {
        float: left;
-       height: fit-content;
        padding: 5%;
    }
 
