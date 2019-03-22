@@ -654,6 +654,13 @@ html {
 
     }
 
+    #aboutMe_div div {
+        width: 80%;
+        height: auto;
+        padding: 4%
+    }
+    
+
     #aboutMe_div h2 {
         font-size: 1.3em;
     }
