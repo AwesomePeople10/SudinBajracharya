@@ -713,7 +713,7 @@ html {
        min-height: 60%;
    }
    #footer {
-       height: 40%;
+       height: fit-content;
    }
 
    #footer h2 {
