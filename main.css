@@ -629,7 +629,7 @@ html {
     }
     
     #bajracharya {
-        top: 45%;
+        top: 46%;
         left: 22%;
         font-size: 8vw;
     }
@@ -638,6 +638,10 @@ html {
         font-size: 3.8vw;
         top: 54%;
         left: 22%;
+    }
+
+    #scroll_div{
+        display: none;
     }
 
     /* Second Div */
@@ -649,11 +653,14 @@ html {
         'who'
         'love'
         'help';
+        grid-gap: 2%;
+        padding-top: 4%;
+        padding-bottom: 4%;
 
     }
 
     #aboutMe_div div {
-        padding: 4%;
+        padding: 2%;
         height: 100%; 
         text-align: center;
     }
@@ -736,5 +743,4 @@ html {
    }
 
 }
-
 
