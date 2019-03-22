@@ -729,9 +729,11 @@ html {
        padding: 5%;
    }
 
-   #info_span p {
-       font-size: 1em;
+   #info_span h3 {
+       font-size: 1.3em;
    }
+
+   #info_span p,
    #credit {
        font-size: 1em;
    }
