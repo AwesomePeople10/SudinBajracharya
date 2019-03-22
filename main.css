@@ -229,7 +229,7 @@ yellow: #EEAE4C; */
     top: 5%;
     color: #ffffff;
     padding-top: 1%;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 #aboutMe_div p {
@@ -252,7 +252,7 @@ yellow: #EEAE4C; */
 }
 
 #work_div h2 {
-    font-size: 3rem;
+    font-size: 3em;
     color: antiquewhite;
     padding: 4% 0 1.5% 0;
 
@@ -308,7 +308,7 @@ yellow: #EEAE4C; */
 }
 
 #myClients_div h2 {
-    font-size: 3rem;
+    font-size: 3em;
     padding: 4% 0 2% 0;
 }
 #clients_div {
@@ -377,12 +377,16 @@ yellow: #EEAE4C; */
     position: relative;
 }
 #contactInfo_div h3{
-    font-size: 1.3rem;
+    font-size: 1.3em;
     padding-bottom: 3%;
 }
 
+#info_span {
+    height: fit-content;
+}
+
 #info_span p {
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 
@@ -650,20 +654,20 @@ html {
     }
 
     #aboutMe_div h2 {
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
 
     #aboutMe_div p {
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
 
     #work_div h2 {
-        font-size: 2rem;
+        font-size: 2em;
         padding: 8% 0 4% 0;
     }
 
     #text{
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
 
     #video {
@@ -681,7 +685,7 @@ html {
 
     /* My clients */
    #myClients_div h2{
-        font-size: 2rem;
+        font-size: 2em;
         padding: 8% 0 4% 0;
    } 
    #myClients_div {
@@ -713,7 +717,7 @@ html {
    }
 
    #footer h2 {
-       font-size: 1.3rem;
+       font-size: 1.3em;
    }
 
    #info_span {
