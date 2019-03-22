@@ -413,10 +413,8 @@ yellow: #EEAE4C; */
 
 #credit{
     background-color: #1d1d1d;
-    position: absolute;
     width: 100%;
     height: auto;
-    bottom: 0;
     color: #313131;
 }
 
@@ -713,7 +711,7 @@ html {
        min-height: 60%;
    }
    #footer {
-       height: 45%;
+       height: 50%;
    }
 
    #footer h2 {
