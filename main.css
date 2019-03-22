@@ -654,7 +654,7 @@ html {
 
     #aboutMe_div div {
         padding: 4%;
-        height: 90%; 
+        height: 100%; 
         text-align: center;
     }
     
@@ -736,4 +736,5 @@ html {
    }
 
 }
+
 
