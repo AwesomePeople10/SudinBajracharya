@@ -722,7 +722,12 @@ html {
 
    #info_span {
        float: left;
+       height: fit-content;
        padding: 5%;
+   }
+   #credit {
+       position: absolute;
+       bottom: 0;
    }
 }
 
