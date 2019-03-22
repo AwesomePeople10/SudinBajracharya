@@ -619,6 +619,8 @@ html {
 
     #intro_div {
         background-position-x: 34%;
+    background-attachment: scroll;
+
         vertical-align: middle;
     }
 
@@ -710,6 +712,10 @@ html {
        'client4'
        'client5';
    }
+
+   .parallax_div{
+    background-attachment: scroll;
+}
 
    #parllax2 {
        min-height: 60%;
