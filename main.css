@@ -246,7 +246,7 @@ yellow: #EEAE4C; */
 /* Mywork */
 
 #work_div {
-    background-color: #269DB3;
+    background-color: rgb(45, 179, 202);
     width: 100%;
     height: fit-content;
 }
@@ -383,9 +383,6 @@ yellow: #EEAE4C; */
 
 #info_span {
     background-color: #CB3735;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
     height: fit-content;
 }
 
@@ -722,7 +719,6 @@ html {
    }
    #footer {
        height: auto;
-       width: 100%;
    }
 
    #footer h2 {
