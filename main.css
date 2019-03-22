@@ -383,7 +383,9 @@ yellow: #EEAE4C; */
 
 #info_span {
     background-color: #CB3735;
-
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     height: fit-content;
 }
 
@@ -714,6 +716,7 @@ html {
    }
    #footer {
        height: auto;
+       width: 100%;
    }
 
    #footer h2 {
