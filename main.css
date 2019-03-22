@@ -3,11 +3,6 @@
     transition: all 1s ease-in-out;
 }
 
-/* 
-red: #CB3735;
-blue: #269DB3;
-yellow: #EEAE4C; */
-
 * {
     padding: 0;
     margin: 0;
@@ -200,11 +195,6 @@ h2{
 #me1:hover {
     background-color: rgb(45, 179, 202);
 }
-
-/*
-red: #CB3735;
-blue: #269DB3;
-yellow: #EEAE4C; */
 
 #me2 {
     grid-area: 'love';
@@ -640,9 +630,6 @@ html {
         left: 22%;
     }
 
-    #scroll_div{
-        display: none;
-    }
 
     /* Second Div */
     #aboutMe_div {
