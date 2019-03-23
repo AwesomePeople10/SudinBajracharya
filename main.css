@@ -278,7 +278,7 @@ h2{
 .thumbnail {
     display: inline-block;
     width: 50vw;
-    height: 50vh;
+    height: 30vh;
     padding: 2%;
     margin: 2%;
     cursor: pointer;
@@ -693,6 +693,11 @@ html {
 
     #playlist {
         padding-bottom:8%; 
+    }
+
+    .thumbnail{
+        
+        height: 10vh;
     }
 
     /* My clients */
