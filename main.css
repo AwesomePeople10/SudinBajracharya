@@ -284,11 +284,12 @@ h2{
     cursor: pointer;
     background-position: center;
     background-size: cover;
+    display: block;
    
 }
 
 #video1{
-    background-image: url("./images/courageT.jpg");
+    background-image: url("./images/canyon.jpg");
     background-repeat: no-repeat;
 }
 
